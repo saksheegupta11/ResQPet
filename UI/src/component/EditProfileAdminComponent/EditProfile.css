@@ -1,0 +1,27 @@
+/* EditProfile.css - Modern settings style */
+.icon-circle {
+  background: rgba(16, 185, 129, 0.1);
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--transition);
+}
+
+.premium-card:hover .icon-circle {
+  transform: scale(1.05);
+  background: var(--primary);
+  color: white !important;
+}
+
+.premium-card:hover .icon-circle svg {
+  color: white !important;
+}
+
+@media (max-width: 767.98px) {
+  .premium-card {
+    padding: 2rem 1.25rem !important;
+  }
+}

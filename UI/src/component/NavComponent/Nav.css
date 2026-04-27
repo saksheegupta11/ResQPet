@@ -1,0 +1,132 @@
+.nav-glass {
+  background: var(--nav-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--glass-border);
+  transition: var(--transition);
+  padding: 0.75rem 0;
+}
+
+.logo-premium {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  background: transparent;
+}
+
+.brand-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.brand-name {
+  font-weight: 800;
+  font-size: 1.25rem;
+  color: var(--primary);
+  letter-spacing: -0.5px;
+}
+
+.brand-tagline {
+  font-size: 0.7rem;
+  color: var(--primary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+[data-theme='dark'] .brand-tagline {
+  color: var(--accent);
+  opacity: 1;
+}
+
+/* Dropdown Customization */
+.dropdown-menu.glass {
+  background: var(--surface);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  padding: 0.5rem;
+  border-radius: 12px;
+}
+
+.dropdown-item {
+  color: var(--text-main) !important;
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  transition: var(--transition);
+}
+
+.dropdown-item:hover {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--primary) !important;
+  transform: translateX(3px);
+}
+
+.dropdown-item.text-danger:hover {
+  background: rgba(239, 68, 68, 0.1);
+  color: #ef4444 !important;
+}
+
+.dropdown-divider {
+  border-color: var(--glass-border);
+  opacity: 0.5;
+}
+
+.nav-link-premium {
+  color: var(--text-main);
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: 10px;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.nav-link-premium:hover {
+  background: rgba(16, 185, 129, 0.1);
+  color: var(--primary);
+}
+
+.theme-toggle-btn {
+  background: var(--bg-alt);
+  border: 1px solid var(--glass-border);
+  color: var(--primary);
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 1.1rem;
+}
+
+.theme-toggle-btn:hover {
+  background: var(--primary);
+  color: white;
+  transform: rotate(15deg);
+}
+
+.custom-toggler {
+  border: none;
+  padding: 0;
+}
+
+.custom-toggler:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: var(--bg-color);
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: var(--radius);
+    box-shadow: var(--card-shadow);
+  }
+}

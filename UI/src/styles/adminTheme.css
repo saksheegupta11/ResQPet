@@ -1,0 +1,108 @@
+:root {
+  --bg-primary: #eaeaea;         /* Main background */
+  --bg-secondary: #63594c;       /* Card background */
+  --accent-color: #697565;       /* Buttons, links */
+  --light-color: #ECDFCC;        /* Text and highlights */
+  --text-muted: #bcb5a5;         /* Secondary text */
+  --header-footer-bg: #222831;   /* Header/Footer background */
+  --button-bg: #393E46;          /* Button background color */
+  --card-radius: 12px;
+  --box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  --font-family: 'Poppins', sans-serif;
+}
+
+.admin-home {
+  background-color: var(--bg-primary);
+  font-family: var(--font-family);
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  color: var(--light-color);
+}
+
+.header, .footer {
+  background-color: var(--header-footer-bg);
+  padding: 1rem;
+  text-align: center;
+}
+
+.header h1, .footer p {
+  margin: 0;
+  color: var(--light-color);
+}
+
+.text-accent {
+  color: var(--accent-color);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+.stat-card, .nav-card {
+  background-color: var(--bg-secondary);
+  border-radius: var(--card-radius);
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.2s ease;
+  text-align: center;
+  color: var(--light-color);
+  min-height: 130px;
+}
+
+.stat{
+  color: #e1d1b2;
+}
+
+
+.nav-card{
+  background-color: #9b815f;
+}
+
+.nav-card h5{
+  color: #f6f1e8;
+}
+
+.stat-card:hover,
+.nav-card:hover {
+  transform: translateY(-6px);
+}
+
+.nav-card h5, .stat-card h5, .stat-card h2 {
+  margin: 0;
+  font-weight: 500;
+}
+
+.stat-card h2 {
+  font-size: 2rem;
+  margin-top: 0.5rem;
+  color: #d0d1cf;
+}
+
+/* Optional utility */
+.text-info {
+  color: var(--accent-color);
+}
+
+button {
+  background-color: var(--button-bg);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  color: var(--light-color);
+  border-radius: var(--card-radius);
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .stat-card, .nav-card {
+    padding: 1rem;
+  }
+
+  .admin-home h2 {
+    font-size: 1.75rem;
+  }
+}

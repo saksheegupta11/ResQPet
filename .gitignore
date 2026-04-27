@@ -1,0 +1,38 @@
+# Dependency directories
+node_modules/
+UI/node_modules/
+API/node_modules/
+
+# Environment variables
+.env
+API/.env
+UI/.env
+
+# Production builds
+UI/build/
+API/dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Large archives
+*.zip
+*.rar
+*.7z
+
+# Uploaded files (keep the directory but ignore content)
+UI/public/assests/upload/petimages/*
+!UI/public/assests/upload/petimages/.gitkeep

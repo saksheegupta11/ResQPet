@@ -1,0 +1,49 @@
+.track-page {
+    min-height: 80vh;
+    background: linear-gradient(135deg, rgba(var(--primary-rgb), 0.05) 0%, transparent 100%);
+}
+
+.input-group-premium {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px solid var(--glass-border);
+}
+
+.status-card {
+    border: 1px solid var(--glass-border);
+    transition: var(--transition);
+}
+
+.status-card:hover {
+    border-color: var(--primary);
+    transform: translateX(5px);
+}
+
+.status-text.pending { color: #f59e0b; }
+.status-text.accepted { color: #3b82f6; }
+.status-text.resolved { color: #10b981; }
+
+.res-img-thumb {
+    flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+    .contact-box {
+        border-left: 0 !important;
+        border-top: 1px solid var(--glass-border);
+        padding-top: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+.contact-box .phone-link {
+    font-size: 1.1rem;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.contact-box .phone-link:hover {
+    color: #3b82f6;
+    letter-spacing: 0.5px;
+}

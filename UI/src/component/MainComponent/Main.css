@@ -1,0 +1,64 @@
+.main-redesign {
+  background: var(--bg-color);
+  min-height: 100vh;
+}
+
+.quote-section {
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--card-shadow);
+  max-width: 800px;
+  margin: 2rem auto !important;
+}
+
+.quote-section h5 {
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.quote-section small {
+  color: var(--primary);
+  letter-spacing: 1px;
+}
+
+.cta-section {
+  background: var(--bg-color);
+  position: relative;
+  overflow: hidden;
+  border-top: 1px solid var(--glass-border);
+}
+
+.cta-section .btn-primary-lg {
+  background: var(--primary);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 14px;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.cta-section .btn-secondary-lg {
+  background: var(--bg-alt);
+  border: 1px solid var(--glass-border);
+  color: var(--text-main);
+  padding: 16px 32px;
+  border-radius: 14px;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.cta-section .btn-primary-lg:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(6, 95, 70, 0.2);
+}
+
+.cta-section .btn-secondary-lg:hover {
+  background: rgba(16, 185, 129, 0.1);
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+  .cta-section .d-flex {
+    flex-direction: column;
+  }
+}

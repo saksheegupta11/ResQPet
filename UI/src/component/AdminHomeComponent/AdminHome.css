@@ -1,0 +1,34 @@
+.dashboard-page {
+  background: var(--bg-alt);
+  min-height: 100vh;
+}
+
+.stat-icon-dashboard {
+  width: 50px;
+  height: 50px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dashboard-welcome-box {
+  background: var(--primary);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dashboard-welcome-box .btn-primary {
+  background: white !important;
+  color: var(--primary) !important;
+}
+
+.dashboard-header .badge-nature {
+  background: rgba(var(--primary-rgb), 0.1);
+}
+
+@media (max-width: 991.98px) {
+  .dashboard-header {
+    text-align: center;
+  }
+}

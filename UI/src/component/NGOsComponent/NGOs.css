@@ -1,0 +1,34 @@
+.bg-alt-nature {
+  background: var(--bg-alt);
+  min-height: 100vh;
+}
+
+.ngo-avatar-lg {
+  width: 65px;
+  height: 65px;
+  background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+  color: white;
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.75rem;
+  font-weight: 800;
+  box-shadow: 0 8px 16px rgba(16, 185, 129, 0.2);
+}
+
+.ngo-info-body div {
+  transition: var(--transition);
+}
+
+.ngo-info-body div:hover {
+  transform: translateX(5px);
+}
+
+.ngo-info-body div svg {
+  color: var(--primary);
+}
+
+[data-theme='dark'] .bg-alt-nature {
+  background: var(--bg-color);
+}
