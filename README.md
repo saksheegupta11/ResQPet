@@ -3,21 +3,41 @@
 A MERN Stack-based web application to report, manage, and rescue injured or stray animals in collaboration with local NGOs.
 
 ## 🚀 Features
-- Report injured animals with location
-- NGO & Admin dashboards
-- Profile and request management
-- Email verification for login/signup
+- **Rescue Reporting**: Report injured animals with location, images, and description.
+- **NGO Dashboard**: Manage rescue requests, mark cases as accepted, and track completion.
+- **Real-time Stats**: Track total rescues, pending alerts, and active cases.
+- **Premium UI**: Modern glassmorphism design with dark/light mode support.
+- **Secure Authentication**: Protected routes and email-based NGO registration.
 
 ## 🛠️ Tech Stack
-- **Frontend:** React.js
-- **Backend:** Node.js + Express.js
+- **Frontend:** React.js, Framer Motion, Lucide Icons
+- **Backend:** Node.js, Express.js
 - **Database:** MongoDB
 - **Email:** NodeMailer
-- **Location Services:** Google Maps API
+- **State Management:** React Context API
 
 ## 📦 Setup Instructions
-```bash
-git clone https://github.com/Trishamishra08/ResQPet-mern.git
-cd ResQPet
-npm install
-npm start
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/saksheegupta11/ResQPet.git
+   cd ResQPet
+   ```
+
+2. **Backend Setup:**
+   ```bash
+   cd API
+   npm install
+   # Create a .env file based on .env.example and add your MongoDB URI & Mailer credentials
+   npm start
+   ```
+
+3. **Frontend Setup:**
+   ```bash
+   cd UI
+   npm install
+   npm start
+   ```
+
+## 🤝 Contribution
+Made with ❤️ by [Sakshee Gupta](https://github.com/saksheegupta11)
