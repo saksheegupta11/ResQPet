@@ -39,5 +39,4 @@ A MERN Stack-based web application to report, manage, and rescue injured or stra
    npm start
    ```
 
-## 🤝 Contribution
-Made with ❤️ by [Sakshee Gupta](https://github.com/saksheegupta11)
+
